@@ -1,0 +1,4 @@
+SourceRelativePath,DestinationRelativePath
+incoming/ExhibitLabel.txt,Exhibits/Labels/ExhibitLabel.txt
+incoming/LightingNotes.txt,Exhibits/Lighting/LightingNotes.txt
+sketches/Atrium.txt,Exhibits/Sketches/Atrium.txt

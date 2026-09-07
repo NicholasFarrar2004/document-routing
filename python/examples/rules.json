@@ -1,0 +1,7 @@
+{
+  "rules": [
+    {"id": "label-text", "target": "Exhibits/Labels", "name_terms": ["label"], "extensions": [".txt"]},
+    {"id": "lighting-notes", "target": "Exhibits/Lighting", "name_terms": ["lighting"], "extensions": [".txt"]},
+    {"id": "sketch-files", "target": "Exhibits/Sketches", "path_terms": ["sketches"], "extensions": [".svg", ".txt"]}
+  ]
+}

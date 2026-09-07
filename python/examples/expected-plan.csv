@@ -1,0 +1,6 @@
+source_path,status,destination,rule_ids,reason
+incoming/ExhibitLabel.txt,routed,Exhibits/Labels/ExhibitLabel.txt,label-text,unique_target
+incoming/LightingNotes.txt,routed,Exhibits/Lighting/LightingNotes.txt,lighting-notes,unique_target
+incoming/label-lighting.txt,review,,label-text;lighting-notes,ambiguous_rules
+incoming/mystery.txt,review,,,no_signal
+sketches/Atrium.txt,routed,Exhibits/Sketches/Atrium.txt,sketch-files,unique_target
