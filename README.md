@@ -33,15 +33,17 @@ Only the three unambiguous rows enter the copy catalog. Review rows cannot silen
 
 ## How it works
 
-```mermaid
-flowchart LR
-    A[Document names] --> B[Configurable matching rules]
-    B --> C[Proposed destinations]
-    B --> D[Review uncertain files]
-    C --> E[Copy catalog]
-    E --> F[Preview]
-    F --> G[Explicit copy command]
+![Illustrated example: five fictional documents produce three proposed destinations and two review items; preview considers three files, explicit execution verifies three copies, and a repeat skips all three identical files.](examples/workflow-example.svg)
+
+This is a workflow illustration, not an app screenshot. It follows the [tested example](tests/verify_pipeline.py): **5 inputs → 3 routed + 2 review → 3 preview results → 3 verified copies → 3 identical-file skips**. The separate Python demo stops at the plan; the complete test also runs the PowerShell copy steps. All counts describe newly invented example files.
+
+To reproduce the complete walkthrough with Python and PowerShell installed, run from the repository root:
+
+```sh
+python3 -B tests/verify_pipeline.py
 ```
+
+The test creates temporary files, runs preview and explicit copy, repeats the copy, and confirms a deliberately changed destination is preserved as a conflict. [Setup and platform limits](docs/TESTING.md) explain what is required.
 
 A document with one clear destination can enter the copy catalog. Missing signals and conflicting matches stay in the review output. The classifier examines names, not document contents.
 

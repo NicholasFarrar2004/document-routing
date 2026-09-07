@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1100" role="img" aria-labelledby="title description">
+<title id="title">Five fictional documents, three verified copies</title>
+<desc id="description">Illustration of the tested command-line example, not an app screenshot. Five fictional exhibit documents produce three proposed destinations and two review items. Only the three routed files enter preview. Explicit execution verifies three copies. Repeating skips all three identical files.</desc>
+<rect width="560" height="1100" rx="20" fill="#f4f6fa"/>
+<g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#18243a">
+<text x="32" y="43" font-size="16" font-weight="700" fill="#52627b">DOCUMENT ROUTING · FICTIONAL EXAMPLE</text>
+<text x="32" y="85" font-size="30" font-weight="750">From names to verified copies</text>
+<text x="32" y="115" font-size="18" fill="#52627b">Workflow illustration, not an app screenshot.</text>
+<rect x="28" y="144" width="504" height="141" rx="14" fill="white" stroke="#d5ddea"/>
+<circle cx="60" cy="178" r="18" fill="#3155a0"/>
+<text x="54" y="185" font-size="19" fill="white" font-weight="700">1</text>
+<text x="91" y="186" font-size="25" fill="#18243a" font-weight="700">5 fictional documents</text>
+<text x="48" y="224" font-size="20" fill="#45546b" font-weight="400">Names are scanned; contents stay unread.</text>
+<text x="48" y="253" font-size="20" fill="#45546b" font-weight="400">Label, lighting, mixed, unknown, sketch.</text>
+<path d="M280 297 v26 m-7 -7 l7 7 7 -7" fill="none" stroke="#8291a8" stroke-width="3"/>
+<rect x="28" y="336" width="504" height="174" rx="14" fill="white" stroke="#d5ddea"/>
+<circle cx="60" cy="370" r="18" fill="#3155a0"/>
+<text x="54" y="377" font-size="19" fill="white" font-weight="700">2</text>
+<text x="91" y="378" font-size="25" fill="#18243a" font-weight="700">3 destinations · 2 review items</text>
+<text x="48" y="416" font-size="20" fill="#45546b" font-weight="400">3 files match one destination each.</text>
+<text x="48" y="445" font-size="20" fill="#45546b" font-weight="400">2 files have conflicting or missing signals.</text>
+<text x="48" y="474" font-size="20" fill="#45546b" font-weight="400">Only 3 routed rows enter the copy catalog.</text>
+<path d="M280 522 v26 m-7 -7 l7 7 7 -7" fill="none" stroke="#8291a8" stroke-width="3"/>
+<rect x="28" y="561" width="504" height="112" rx="14" fill="white" stroke="#d5ddea"/>
+<circle cx="60" cy="595" r="18" fill="#3155a0"/>
+<text x="54" y="602" font-size="19" fill="white" font-weight="700">3</text>
+<text x="91" y="603" font-size="25" fill="#18243a" font-weight="700">Preview: 3 files</text>
+<text x="48" y="641" font-size="20" fill="#45546b" font-weight="400">3 WOULD_COPY. No destination created.</text>
+<path d="M280 685 v26 m-7 -7 l7 7 7 -7" fill="none" stroke="#8291a8" stroke-width="3"/>
+<rect x="28" y="724" width="504" height="141" rx="14" fill="white" stroke="#d5ddea"/>
+<circle cx="60" cy="758" r="18" fill="#157361"/>
+<text x="54" y="765" font-size="19" fill="white" font-weight="700">4</text>
+<text x="91" y="766" font-size="25" fill="#18243a" font-weight="700">Explicit copy: 3 verified</text>
+<text x="48" y="804" font-size="20" fill="#45546b" font-weight="400">3 COPIED_VERIFIED results.</text>
+<text x="48" y="833" font-size="20" fill="#45546b" font-weight="400">Source and copy content hashes match.</text>
+<path d="M280 877 v26 m-7 -7 l7 7 7 -7" fill="none" stroke="#8291a8" stroke-width="3"/>
+<rect x="28" y="916" width="504" height="112" rx="14" fill="white" stroke="#d5ddea"/>
+<circle cx="60" cy="950" r="18" fill="#157361"/>
+<text x="54" y="957" font-size="19" fill="white" font-weight="700">5</text>
+<text x="91" y="958" font-size="25" fill="#18243a" font-weight="700">Repeat: 3 identical skips</text>
+<text x="48" y="996" font-size="20" fill="#45546b" font-weight="400">3 SKIP_IDENTICAL. Sources unchanged.</text>
+<text x="32" y="1064" font-size="18" fill="#52627b" font-weight="400">Counts match the tested public example.</text>
+</g>
+</svg>
