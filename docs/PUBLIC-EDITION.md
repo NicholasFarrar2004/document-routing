@@ -1,12 +1,24 @@
-# About this edition
+# Background, contribution and public scope
 
-This project demonstrates generic document classification and file-copy engineering adapted from an earlier migration tool. Nicholas Farrar directed the original work and the preparation of this edition with AI assistance.
+## Internship origin
 
-The public edition uses independently invented examples. Its rules, documents and results describe a fictional demonstration. They do not describe any organization's records, operating procedures or production system.
+Nicholas Farrar created the original document-organization and migration automation during his internship at Curo. His work involved defining requirements, directing AI-assisted implementation, iterating on the scripts and troubleshooting their behavior.
 
-The retained engineering includes configurable classification, explicit review outcomes, catalog processing and controlled file copying. Organization-specific rules, source records, operational notes and integrations are excluded. This is a portfolio edition of recovered code, not a complete production migration system.
+This repository presents an adapted public edition of the reusable engineering. It demonstrates how classification decisions, review outputs and filesystem operations can be separated and verified. It does not describe Curo's internal records or operating procedures.
 
-Only the validation recorded in [Testing](TESTING.md) is claimed for this edition. The source was recovered from a backup whose completeness has not been established.
+## What the public edition demonstrates
+
+The Python planner scans relative filenames, evaluates configurable rules and records proposed destinations or review reasons. It exports only unambiguous rows for the copy stage. The PowerShell copier previews those rows, requires explicit execution, compares content hashes and reports conflicts without overwriting existing files.
+
+The edition retains and adapts generic filename normalization, path handling, CSV processing, bounded worker execution and per-file reporting. Its configuration format, neutral rules, fixtures, tests and several safety controls were prepared for public demonstration. In particular, its no-overwrite and hash-verification behavior must not be read as a claim about the historical tool's deployed behavior.
+
+## Privacy and provenance
+
+All example documents, catalogs, rules and results were independently invented. No original record was renamed or redacted into a fixture. Organization-specific taxonomies, identity logic, integrations, source records and operational notes are excluded. Mentioning the internship provides background, not an account of confidential client-handling practices.
+
+The source was recovered from a backup whose completeness has not been established. This is not a complete production migration system or a claim of parity with the earlier workflow. Only the checks recorded in [Testing](TESTING.md) are claimed for this edition.
+
+Nicholas directed the original project and the adaptation with AI assistance. The repository does not imply that every line was manually written without those tools.
 
 ## Contributing
 

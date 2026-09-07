@@ -2,9 +2,11 @@
 
 Turn a folder of documents into a reviewable filing plan, then copy approved files without replacing existing work.
 
+I created the original automation during my internship at **Curo**, using AI-assisted development to work on document organization and migration. This repository presents the reusable engineering from that work in a public edition with independently invented examples.
+
 The Python tool examines filenames and folder names using rules you supply. It flags uncertain matches for review. The PowerShell tool previews a copy catalog and requires an explicit command to copy files. The included demonstration uses an entirely fictional library exhibit.
 
-[Try the example](#try-the-example) · [How it works](#how-it-works) · [Python reference](python/README.md) · [PowerShell reference](powershell/README.md) · [Testing](docs/TESTING.md) · [About this edition](docs/PUBLIC-EDITION.md)
+[Project background](#project-background-and-my-contribution) · [Try the example](#try-the-example) · [How it works](#how-it-works) · [Python reference](python/README.md) · [PowerShell reference](powershell/README.md) · [Testing](docs/TESTING.md) · [About this edition](docs/PUBLIC-EDITION.md)
 
 ## Try the example
 
@@ -44,6 +46,25 @@ flowchart LR
 A document with one clear destination can enter the copy catalog. Missing signals and conflicting matches stay in the review output. The classifier examines names, not document contents.
 
 Copying is a separate step. The default preview makes no filesystem changes. An explicitly requested report may create a new log file. During an explicitly requested copy, the copier skips identical destination files and reports conflicts instead of overwriting them. It does not delete source files.
+
+## Project background and my contribution
+
+The engineering problem was making a document migration inspectable and repeatable. A useful script needs to explain its decisions, leave uncertain cases for review and handle a second run without silently replacing existing work.
+
+I defined the requirements, directed AI-assisted implementation and worked through iterations and troubleshooting. Preparing this public edition also required separating reusable code from private operational details, replacing the original rules and data, and verifying the resulting workflow.
+
+### What this demonstrates
+
+| Skill | Evidence in this repository |
+| --- | --- |
+| Turning an operational problem into configurable automation | [Rule-driven classification](python/router.py) separates matching rules from file copying |
+| Handling ambiguous and conflicting inputs | [Planner tests](python/tests/test_router.py) cover competing destinations, duplicate paths and no-signal files |
+| Designing a reviewable workflow | [The example plan](python/examples/expected-plan.csv) exposes each decision before the copy stage |
+| Building reliable filesystem operations | [The copier](powershell/Copy-WorkshopFiles.ps1) checks paths, previews changes, compares hashes and preserves conflicts |
+| Testing failures and repeat runs | [The complete workflow test](tests/verify_pipeline.py) verifies copying, rerun skips, conflict preservation and unchanged sources |
+| Making technical work usable by others | [Setup and validation instructions](docs/TESTING.md) let readers reproduce the demonstration with fictional data |
+
+The public edition adapts the earlier tool; it does not reproduce Curo's internal workflow. The configurable rules, demonstration data and tests were written for this edition. Its strengthened copy safeguards are verified here, not claimed as features deployed during the internship. No client records, internal routing rules or operational logs are included.
 
 ## Use your own rules
 
