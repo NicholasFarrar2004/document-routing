@@ -33,7 +33,7 @@ Only the three unambiguous rows enter the copy catalog. Review rows cannot silen
 
 ## How it works
 
-![Illustrated example: five fictional documents produce three proposed destinations and two review items; preview considers three files, explicit execution verifies three copies, and a repeat skips all three identical files.](examples/workflow-example.svg)
+<img src="examples/workflow-example.svg" alt="Illustrated example: five fictional documents produce three proposed destinations and two review items; preview considers three files, explicit execution verifies three copies, and a repeat skips all three identical files." width="560">
 
 This is a workflow illustration, not an app screenshot. It follows the [tested example](tests/verify_pipeline.py): **5 inputs → 3 routed + 2 review → 3 preview results → 3 verified copies → 3 identical-file skips**. The separate Python demo stops at the plan; the complete test also runs the PowerShell copy steps. All counts describe newly invented example files.
 
